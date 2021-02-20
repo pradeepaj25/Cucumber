@@ -97,7 +97,12 @@ This includes both the living documentation from the feature files:
 ![](newyorktimes-cucumber/target/site/serenity/index.html)
 
 
-CI Integration with jenkins
+##########CI Integration with GitLab:###########
 
-install jenkins on your hardware, follow https://plugins.jenkins.io/git/ for integration.
+Register in Gitlab
+Create a project and import project from GitHub user Git repository link and authentication token.
+Register specific runner (windows), follow appropriate link for any operating system- https://docs.gitlab.com/runner/install/windows.html
+Create .gitlab-ci.yml file for maven, with artifacts.
+build the pipeline
+The pipeline gets automatically called for any commits.
 
